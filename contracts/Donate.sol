@@ -29,7 +29,7 @@ contract Donate {
     }
 
     function donate() public payable notZero{
-        donateUsers[msg.sender] = msg.value;
+        donateUsers[msg.sender] += msg.value;
         emit addDonate(msg.sender, msg.value);
     }
 

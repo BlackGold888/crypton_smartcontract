@@ -4,12 +4,12 @@ This project demonstrates a basic Hardhat use case. It comes with a sample contr
 
 Try running some of the following tasks:
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/deploy.js
-npx hardhat help
-```
+Compiling contract `npx hardhat compile`\
+Deploying contracts ROPSTEN `npx hardhat run scripts/deploy.js`\
+Deploying contracts localhost `npx hardhat run scripts/deploy.js --network localhost`\
+Connecting a wallet `npx hardhat node`
+
+### Run tasks on localhost 
+donate ` npx hardhat donate --amount 1000 --network localhost`\
+get balance `npx hardhat balance --network localhost`\
+withdraws `npx hardhat withdraw --account address`
